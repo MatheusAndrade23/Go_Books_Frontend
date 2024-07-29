@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">🛒 Go Books 📒</h1>
 
-## Getting Started
+<p align="center">
+ <a href="#demo">Demonstração</a> •
+ <a href="#tecnologias">Tecnologias</a> •
+ <a href="#detalhes">Detalhes</a>
+</p>
 
-First, run the development server:
+<p align="center">É um site de leilão de livros! Onde usuários podem vender ou comprar.</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<h4 align="center">
+  <a href="https://github.com/MatheusAndrade23/Go_Books_Backend">Clique para ver o Backend!</a>
+</h4>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<h2 id="demo">Demonstração 🎥</h2>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+_<h3>Telas do usuário "Vendedor" + Vendedor criando leilão do livro📚</h3>_
+![Tela_do_Vendedor](https://github.com/user-attachments/assets/cc262d91-6e74-482a-aed9-8a125e6e9468)
 
-## Learn More
+_<h3>Telas do usuário "Comprador" + Comprador dando Lances🛒</h3>_
+![Tela_do_Comprador](https://github.com/user-attachments/assets/d4e2daab-edb7-4cf6-b3be-d3a78fe22b38)
 
-To learn more about Next.js, take a look at the following resources:
+_<h3>"Vendedor" aceitando ou recusando lances ✅</h3>_
+![Aceitando_Rejeitando_Lance](https://github.com/user-attachments/assets/9e8a4519-198e-4ed8-94fb-492d9093ceb3)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+_<h3>"Comprador" vendo seus lances aceitos ou recusados ✅</h3>_
+![Comprador_Checando_Seus_Lances](https://github.com/user-attachments/assets/11200519-a4af-4cf9-b771-3ecb12830360)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+_<h3>Navegando pelo Prisma Studio e R2 Cloudfare 📁</h3>_
+![Navegando_Prisma](https://github.com/user-attachments/assets/eff1a426-f1f3-446a-a328-5752ff92f26c)
 
-## Deploy on Vercel
+<br>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<h2 id="tecnologias">Tecnologias Utilizadas 🛠</h2>
+
+#### FrontEnd: `NextJS!`
+
+- TypeScript
+- Material Ui
+- React HookForm
+- Zod
+- Axios
+- React Toastify
+- Context API
+- React Hooks
+
+#### BackEnd: `NestJS!`
+
+- TypeScript
+- Prisma
+- Docker
+- Bcrypt
+- JWT
+- Vitest
+- Supertest
+
+#### Banco de Dados: `PostgreSQL!`
+
+<br>
+
+---
