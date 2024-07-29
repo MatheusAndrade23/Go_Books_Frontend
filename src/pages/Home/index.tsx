@@ -26,7 +26,12 @@ export const HomePage = () => {
     const getData = async () => {
       try {
         const response = await api.get("/auctions");
-        setAuctions(response.data.auctions);
+        const auctionsFiltered = response.data.auctions.filter(
+          (auction: Auction) => {
+            return auction.acceptedBidId === null;
+          }
+        );
+        setAuctions(auctionsFiltered);
         setLoading(false);
       } catch (error) {
         if (error instanceof AxiosError) {
@@ -57,7 +62,9 @@ export const HomePage = () => {
               fontWeight: "bold",
             }}
           >
-            Livros disponíveis:
+            {auctions.length > 0
+              ? "Leilões disponíveis"
+              : "Nenhum leilão disponível"}
           </Typography>
           {!loading && (
             <AuctionsContainer>

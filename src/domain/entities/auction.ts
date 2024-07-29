@@ -5,4 +5,5 @@ export interface Auction {
   slug: string;
   description: string;
   bookGenre: string;
+  acceptedBidId: string | null;
 }
