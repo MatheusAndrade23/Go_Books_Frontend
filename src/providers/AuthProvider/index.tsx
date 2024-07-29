@@ -23,7 +23,7 @@ interface AuthContextType {
     role: "seller" | "buyer",
     name: string
   ) => void;
-  login: (email: string, password: string) => void;
+  login: (email: string, password: string, role: "seller" | "buyer") => void;
   logout: () => void;
 }
 
@@ -54,13 +54,18 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
     localStorage.setItem("@go-books/user", stateJSON);
   }, [user]);
 
-  const login = async (email: string, password: string) => {
+  const login = async (
+    email: string,
+    password: string,
+    role: "seller" | "buyer"
+  ) => {
     setAuthLoading(true);
 
     try {
       const response = await api.post("/sessions", {
         email,
         password,
+        role,
       });
 
       const token = response.data.access_token;
@@ -97,7 +102,7 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
         name,
       });
 
-      login(email, password);
+      login(email, password, role);
       toast.info("Conta criada com sucesso!");
     } catch (error) {
       if (error instanceof AxiosError) {

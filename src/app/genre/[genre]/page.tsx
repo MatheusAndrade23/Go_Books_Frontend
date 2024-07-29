@@ -13,7 +13,7 @@ export default function Genre({
   const { user } = useAuth();
 
   if (!user.isAuthenticated) {
-    redirect("/auth/signIn");
+    redirect("/auth/signin");
   }
 
   if (user.isAuthenticated && user.role === "buyer") {

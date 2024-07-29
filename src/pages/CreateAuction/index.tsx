@@ -125,7 +125,8 @@ export const CreateAuctionPage = () => {
               <MenuItem value="ficção">Ficção</MenuItem>
               <MenuItem value="fantasia">Fantasia</MenuItem>
               <MenuItem value="mistério">Mistério</MenuItem>
-              <MenuItem value="terror">Aventura</MenuItem>
+              <MenuItem value="terror">Terror</MenuItem>
+              <MenuItem value="aventura">Aventura</MenuItem>
               <MenuItem value="biografia">Biografia</MenuItem>
               <MenuItem value="história">História</MenuItem>
             </Select>

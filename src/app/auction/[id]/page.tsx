@@ -13,7 +13,7 @@ export default function Auction({
   const { user } = useAuth();
 
   if (!user.isAuthenticated) {
-    redirect("/auth/signIn");
+    redirect("/auth/signin");
   }
 
   return <AuctionPage id={id} />;

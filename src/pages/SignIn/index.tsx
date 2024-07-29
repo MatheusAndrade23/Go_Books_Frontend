@@ -5,9 +5,11 @@ import { SignInContainer } from "./styles";
 import { Text } from "@/components/Text";
 import { SignInForm, InputsContainer } from "./styles";
 
+import { useState } from "react";
+
 import { useAuth } from "@/hooks/Auth";
 
-import { TextField, Button, Link } from "@mui/material";
+import { TextField, Button, Link, Select, MenuItem } from "@mui/material";
 
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -24,6 +26,7 @@ const signInFormSchema = zod.object({
 export type signInData = zod.infer<typeof signInFormSchema>;
 
 export const SignInPage = () => {
+  const [role, setRole] = useState<"buyer" | "seller">("buyer");
   const { register, handleSubmit, watch } = useForm();
 
   const signInForm = useForm<signInData>({
@@ -49,7 +52,7 @@ export const SignInPage = () => {
   );
 
   const onSubmitSignInForm = (data: any) => {
-    login(email, password);
+    login(email, password, role);
   };
 
   return (
@@ -72,6 +75,31 @@ export const SignInPage = () => {
             {...register("email")}
             color={isEmailValid ? "success" : "warning"}
           />
+
+          <Text
+            style={{
+              marginBottom: "1rem",
+              marginTop: "2rem",
+              fontSize: "1.2rem",
+            }}
+          >
+            Comprador ou vendedor?
+          </Text>
+
+          <Select
+            labelId="demo-simple-select-label"
+            id="demo-simple-select"
+            value={role}
+            onChange={(event) =>
+              setRole(event.target.value as "buyer" | "seller")
+            }
+            style={{
+              width: "100%",
+            }}
+          >
+            <MenuItem value={"buyer"}>Comprador</MenuItem>
+            <MenuItem value={"seller"}>Vendedor</MenuItem>
+          </Select>
           <Text
             style={{
               marginBottom: "1rem",
