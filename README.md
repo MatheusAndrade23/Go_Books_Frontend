@@ -90,4 +90,4 @@ _<h3>Navegando pelo Prisma Studio e R2 Cloudfare 📁</h3>_
 
 -  Abra o seu navegador e vá até "http://localhost:3000"
 
-<h3>Lembre-se de rodar o Backendo também!</h3>
+<h3>Lembre-se de rodar o BackEnd também!</h3>
