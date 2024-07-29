@@ -3,7 +3,7 @@
 <p align="center">
  <a href="#demo">Demonstração</a> •
  <a href="#tecnologias">Tecnologias</a> •
- <a href="#detalhes">Detalhes</a>
+ <a href="#rodas">Rodar Localmente</a>
 </p>
 
 <p align="center">É um site de leilão de livros! Onde usuários podem vender ou comprar.</p>
@@ -63,3 +63,31 @@ _<h3>Navegando pelo Prisma Studio e R2 Cloudfare 📁</h3>_
 <br>
 
 ---
+
+<h2 id="rodar">Como rodar localmente 🛠</h2>
+
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/MatheusAndrade23/Go_Books_Frontend.git
+
+2. Navegue até o diretório do projeto:
+
+   ```bash
+   cd Go_Books_Frontend
+
+3. Instale as Dependências:
+
+   ```bash
+   npm install
+
+4. Rode o projeto:
+
+   ```bash
+   npm run dev
+
+5. Abra no navegador:
+
+-  Abra o seu navegador e vá até "http://localhost:3000"
+
+<h3>Lembre-se de rodar o Backendo também!</h3>
