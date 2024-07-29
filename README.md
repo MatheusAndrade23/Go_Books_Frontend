@@ -32,7 +32,8 @@ _<h3>Navegando pelo Prisma Studio e R2 Cloudfare 📁</h3>_
 ![Navegando_Prisma](https://github.com/user-attachments/assets/eff1a426-f1f3-446a-a328-5752ff92f26c)
 
 _<h3>Documentação dos endpoints com Swagger 🌐</h3>_
-![api_docs](https://github.com/user-attachments/assets/ef16450b-9d84-47a5-9a67-0067f193af12)
+![api_docs_NOVO](https://github.com/user-attachments/assets/dad7282a-396f-4100-844d-a5d96a5014a6)
+
 
 <br>
 
