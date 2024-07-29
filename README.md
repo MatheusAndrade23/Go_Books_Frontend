@@ -3,7 +3,7 @@
 <p align="center">
  <a href="#demo">Demonstração</a> •
  <a href="#tecnologias">Tecnologias</a> •
- <a href="#rodas">Rodar Localmente</a>
+ <a href="#rodar">Rodar Localmente</a>
 </p>
 
 <p align="center">É um site de leilão de livros! Onde usuários podem vender ou comprar.</p>
