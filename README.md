@@ -3,7 +3,7 @@
 <p align="center">
  <a href="#demo">Demonstração</a> •
  <a href="#tecnologias">Tecnologias</a> •
- <a href="#detalhes">Detalhes</a>
+ <a href="#rodar">Rodar Localmente</a>
 </p>
 
 <p align="center">É um site de leilão de livros! Onde usuários podem vender ou comprar.</p>
@@ -26,7 +26,8 @@ _<h3>"Vendedor" aceitando ou recusando lances ✅</h3>_
 ![Aceitando_Rejeitando_Lance](https://github.com/user-attachments/assets/9e8a4519-198e-4ed8-94fb-492d9093ceb3)
 
 _<h3>"Comprador" vendo seus lances aceitos ou recusados ✅</h3>_
-![Comprador_Checando_Seus_Lances](https://github.com/user-attachments/assets/11200519-a4af-4cf9-b771-3ecb12830360)
+![Comprador vendo lances](https://github.com/user-attachments/assets/43079180-5100-4699-8550-96508f39bac9)
+
 
 _<h3>Navegando pelo Prisma Studio e R2 Cloudfare 📁</h3>_
 ![Navegando_Prisma](https://github.com/user-attachments/assets/eff1a426-f1f3-446a-a328-5752ff92f26c)
@@ -63,3 +64,31 @@ _<h3>Navegando pelo Prisma Studio e R2 Cloudfare 📁</h3>_
 <br>
 
 ---
+
+<h2 id="rodar">Como rodar localmente 🛠</h2>
+
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/MatheusAndrade23/Go_Books_Frontend.git
+
+2. Navegue até o diretório do projeto:
+
+   ```bash
+   cd Go_Books_Frontend
+
+3. Instale as Dependências:
+
+   ```bash
+   npm install
+
+4. Rode o projeto:
+
+   ```bash
+   npm run dev
+
+5. Abra no navegador:
+
+-  Abra o seu navegador e vá até "http://localhost:3000"
+
+<h3>Lembre-se de rodar o BackEnd também!</h3>
